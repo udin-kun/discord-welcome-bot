@@ -56,3 +56,7 @@ client.login(config.TOKEN);                    //start the bot with the bot toke
                     align="center"
                 />
             </a></div>
+            
+## Credit
+
+[@Tomato6966](https://github.com/Tomato6966/) For the great bot!!
