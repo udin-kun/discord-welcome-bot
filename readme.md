@@ -1,4 +1,4 @@
-# Discord-Welcome-Images
+[![discord-welcome-bot](https://github-readme-stats.vercel.app/api/pin/?username=navaneethkm004&repo=discord-welcome-bot&theme=dark)](https://github.com/navaneethkm004/discord-welcome-bot)<br/>
 
 An easy to setup and easy to use Welcome System Bot for Discord.js with the package `canvas`
 
