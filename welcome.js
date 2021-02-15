@@ -1,6 +1,8 @@
 const config = require("./config");
 const Canvas = require("canvas");
 const Discord = require("discord.js");
+const { registerFont, createCanvas } = require('canvas')
+registerFont('./Roboto-Regular.ttf', { family: 'Roboto' })
 
 module.exports = function (client) {
 
@@ -28,29 +30,29 @@ module.exports = function (client) {
       var textString3 = `${member.user.username}`;
       //if the text is too big then smaller the text
       if (textString3.length >= 14) {
-        ctx.font = 'bold 100px Genta';
+        ctx.font = 'bold 100px "Roboto"';
         ctx.fillStyle = '#f2f2f2';
         ctx.fillText(textString3, 720, canvas.height / 2 + 20);
       }
       //else dont do it
       else {
-        ctx.font = 'bold 150px Genta';
+        ctx.font = 'bold 150px "Roboto"';
         ctx.fillStyle = '#f2f2f2';
         ctx.fillText(textString3, 720, canvas.height / 2 + 20);
       }
       //define the Discriminator Tag
       var textString2 = `#${member.user.discriminator}`;
-      ctx.font = 'bold 40px Genta';
+      ctx.font = 'bold 40px "Roboto"';
       ctx.fillStyle = '#f2f2f2';
       ctx.fillText(textString2, 730, canvas.height / 2 + 58);
       //define the Member count
       var textString4 = `Member #${member.guild.memberCount}`;
-      ctx.font = 'bold 60px Genta';
+      ctx.font = 'bold 60px "Roboto"';
       ctx.fillStyle = '#f2f2f2';
       ctx.fillText(textString4, 750, canvas.height / 2 + 125);
       //get the Guild Name
       var textString4 = `${member.guild.name}`;
-      ctx.font = 'bold 60px Genta';
+      ctx.font = 'bold 60px "Roboto"';
       ctx.fillStyle = '#f2f2f2';
       ctx.fillText(textString4, 700, canvas.height / 2 - 150);
       //create a circular "mask"
